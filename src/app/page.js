@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
+import Image from 'next/image';
 
 const WaxTropicale = () => {
   const [activeSection, setActiveSection] = useState('home');
@@ -92,7 +93,7 @@ const WaxTropicale = () => {
               transition={{ type: "spring", stiffness: 300 }}
             >
               <div className="w-10 h-10 bg-orange-400 rounded-full flex items-center justify-center">
-                <span className="text-white font-bold">W</span>
+              <Image src="/logoWax.jpeg" alt="Logo Wax Tropicale" width={40} height={40} className="rounded-full" />
               </div>
               <span className="text-xl font-bold" style={{ color: '#f4f1de' }}>La Wax Panama</span>
             </motion.div>
@@ -206,6 +207,9 @@ const WaxTropicale = () => {
 
       {/* Hero Section */}
       <section id="home" className="min-h-screen flex items-center relative overflow-hidden" style={{ backgroundColor: '#f4f1de' }}>
+          <div className="absolute inset-0 opacity-20">
+          <Image src="/wax.jpeg" alt="Wax background" fill className="object-cover" />
+        </div>
         <div className="absolute inset-0 opacity-20">
           <div className="w-full h-full bg-gradient-to-br from-orange-200 to-yellow-200"></div>
         </div>
@@ -702,7 +706,7 @@ const WaxTropicale = () => {
             viewport={{ once: true }}
           >
             <div className="w-8 h-8 bg-orange-400 rounded-full flex items-center justify-center">
-              <span className="text-white font-bold text-sm">W</span>
+              <Image src="/logoWax.jpeg" alt="Logo Wax Tropicale" width={40} height={40} className="rounded-full" />
             </div>
             <span className="text-lg font-bold" style={{ color: '#f4f1de' }}>Wax Tropicale Panama</span>
           </motion.div>
