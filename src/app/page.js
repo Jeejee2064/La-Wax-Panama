@@ -39,7 +39,7 @@ const WaxTropicale = () => {
   return (
     <>
       <Head>
-        <title>Wax Tropicale 100% Panama - Panamá Perfect</title>
+        <title>La Wax 100% Panama - Faite avec amour !</title>
         <meta name="description" content="Wax artisanale adaptée au climat tropical du Panama. Fabriquée localement par un surfeur pour les surfeurs." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
@@ -50,7 +50,7 @@ const WaxTropicale = () => {
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-3">
               <Image src="/logoWax.jpeg" alt="Logo Wax Tropicale" width={40} height={40} className="rounded-full" />
-              <span className="text-xl font-bold" style={{ color: '#f4f1de' }}>Wax Tropicale</span>
+              <span className="text-xl font-bold" style={{ color: '#f4f1de' }}>La Wax Panama</span>
             </div>
             
             <div className="hidden md:flex space-x-6">
@@ -59,8 +59,8 @@ const WaxTropicale = () => {
                 { id: 'histoire', label: 'Mon Histoire' },
                 { id: 'projet', label: 'Le Projet' },
                 { id: 'pourquoi', label: 'Pourquoi' },
-                { id: 'evolution', label: 'Évolution' },
-                { id: 'disponible', label: 'Disponible' },
+                { id: 'evolution', label: 'Avis' },
+                { id: 'disponible', label: 'La Wax' },
                 { id: 'contact', label: 'Contact' }
               ].map((item) => (
                 <button
